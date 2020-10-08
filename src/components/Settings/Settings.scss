@@ -1,0 +1,51 @@
+.settings-section{
+    width: 70%;
+    background-color: #dcdcdc;
+    padding: 15px;
+    
+    .settings-section__img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        .form-group{
+            width: 100%;
+        }
+    }
+    .settings-section__inputs{
+        width: 100%;
+        .form-group{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (min-width:600px){
+    .settings-section{
+        display: flex;
+        flex-direction: row;
+        .settings-section__img{
+            width: 40%;
+        }
+        .settings-section__inputs{
+            width: 60%;
+        }
+    }
+}
+
+@media screen and (max-width:599px){
+    .settings-section{
+        display: flex;
+        flex-direction: column;
+        .settings-section__img{
+            width: 100%;
+            img{
+                width: 100%;
+            }
+        }
+        .settings-section__inputs{
+            width: 100%;
+        }
+    }
+}

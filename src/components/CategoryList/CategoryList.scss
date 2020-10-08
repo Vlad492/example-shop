@@ -1,0 +1,121 @@
+
+.goodslist__title{
+    margin-top: 20px;
+    text-align: center;
+}
+.goodslist__card{
+    animation-name: unhover ;
+    animation-duration: .5s ;
+    animation-fill-mode: forwards;
+    border-radius: 1em;
+}
+@media screen and (max-width : 599px){
+    .goods__navigation{
+        width: 90%;
+    }
+    .goodslist__section{
+        padding: 10px 0px 0px 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .goodslist__card:hover{
+        text-decoration: none;
+    }
+    .goodslist__card{
+        width: 80%;
+        margin: 10px 0 10px 0;
+    }
+    .goodslist__cardtext{
+        color: black;
+        text-align: center;
+    }
+    .goodlist__price{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: black;
+        margin: 10px;
+    }
+    .goodlist__img{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (min-width : 600px){
+    .goodslist__section{
+        padding: 15px;
+        width: 100%;
+    }
+    .goods__navigation{
+        width: 80%;
+    }
+    .goodslist__card{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        margin: 10px 0 10px 0;
+   
+    }
+    .goodslist__body{
+        text-decoration: none;
+    }
+    .goodslist__cardtext{
+        color: black;
+    }
+    .goodlist__price{
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px;
+    }
+    .goodslist__button{
+        width: 100px;
+        margin: 10px;
+    }
+    .goodslist__hr{
+        height: 125px;
+        width: 1px;
+        background: silver;
+    }
+}
+.goods__navigation{
+    display: flex;
+    margin-top: 20px;
+     justify-content: space-between;
+     align-items: center;
+     background: #dcdcdc;
+     padding-right:15px;
+     border-radius: 1em;
+    flex-direction: row;
+    .navigation__text{
+         width: auto;
+         cursor: pointer;
+         text-align: right;
+         margin: 10px;
+     }
+}
+.goodslist__card:hover{
+    animation-name: hover ;
+    animation-duration: .5s;
+    
+}
+@keyframes hover{
+    0%{
+        transform: scale(1);
+    }100%{
+        transform: scale(1.1);
+    }
+}
+@keyframes unhover{
+    0%{
+        transform: scale(1.1);
+    }100%{
+        transform: scale(1);
+    }
+}

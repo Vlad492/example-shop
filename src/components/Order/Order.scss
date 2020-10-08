@@ -1,0 +1,180 @@
+.order-section{
+
+    .order-section__header{
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .order-section__header_navigation{
+            padding-right: 15px;
+            background: #dcdcdc;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 1em;
+            .header__navigation_text{
+                margin: 10px;
+                cursor: pointer;
+                
+            }
+        }
+        .order-section__header_h4{
+            margin-top: 20px;
+        }
+        
+        
+    }
+    .order-section__body{
+        height: auto;
+        padding: 15px;
+        border: 2px solid silver;
+                border-radius: 1em;
+        display: flex;
+        .order-section__body_info{
+            .body-info{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                p{
+                    width: 100%;
+                    text-align: center;
+                }
+             }
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .order-section__body_info-status{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+        }
+        .order-section__body_goods{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .order-section__body_goods-text{
+                width: 100%;
+                padding-left: 20px;
+                margin: 0px;
+                font-weight: 600;
+            }
+            .order-section__body_goods-card{
+                width: 100%;
+                padding:10px ;
+                border: 2px solid silver;
+                display: grid;
+                grid-template-columns: 1fr 3fr 1px 1fr 1px 1fr 1px 1fr;
+                .card-inner{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .goods-card__hr{
+                    background: silver;
+                    width: 1px;
+                    height: auto;
+                }
+
+            }
+        }
+    }
+   
+}
+
+
+
+@media screen and (min-width:600px){
+    .order-section{
+        width: 70%;  
+        .order-section__header{
+           
+            .order-section__header_navigation{ 
+                width: 100%;
+            }
+        }
+        .order-section__body{
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            .order-section__body_info{
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .order-section__body_info-status{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                }
+            }
+            .order-section__body_goods{
+                width: 80%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .order-section__body_goods-text{
+                    width: 100%;
+                    padding-left: 20px;
+                    margin: 0px;
+                    font-weight: 600;
+                }
+                .order-section__body_goods-card{
+                    width: 100%;
+                    background: white;
+                    display: grid;
+                    grid-template-columns: 1fr 3fr 1px 1fr 1px 1fr 1px 1fr;
+                    .card-inner{
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                    .goods-card__hr{
+                        background: silver;
+                        width: 1px;
+                        height: auto;
+                    }
+
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:599px){
+    .order-section{
+        width: 100%;
+    
+    .order-section__header{
+        
+        .order-section__header_navigation{
+            width: 90%;
+        }
+    }
+    .order-section__body{
+        height: auto;
+        padding: 0px;
+        display: flex;
+        flex-direction: column; 
+         .order-section__body_info{
+             width: 100%;
+         }
+        .order-section__body_goods{
+             width: 100%;
+             .order-section__body_goods-card{
+                 padding: 0px;
+             }
+        }
+    }
+   
+}
+}
